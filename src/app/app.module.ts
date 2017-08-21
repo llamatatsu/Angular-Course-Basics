@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { Ass2DataBindingComponent } from './ass2-data-binding/ass2-data-binding.component';
+import { Ass3DirectivesComponent } from './ass3-directives/ass3-directives.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { Ass2DataBindingComponent } from './ass2-data-binding/ass2-data-binding.
     ServersComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    Ass2DataBindingComponent
+    Ass2DataBindingComponent,
+    Ass3DirectivesComponent
   ],
   imports: [
     BrowserModule,

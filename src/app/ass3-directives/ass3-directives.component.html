@@ -1,0 +1,23 @@
+<label>Assignment 3 - Directives</label>
+<br>
+<button 
+  class="btn btn-primary"
+  (click)="displayParagraph()">
+  Display Details
+</button>
+
+<p *ngIf="paragraphVisible">Secret Password = tuna</p>
+
+<!-- <div 
+    *ngFor="let btnClick of buttonClicks"
+    [ngStyle]="{backgroundColor: btnClick > 4 ? 'blue' : 'transparent'}"
+    [ngClass]="{after5thClick: btnClick > 4}">
+   {{btnClick}} 
+</div> -->
+
+<div 
+  *ngFor="let btnClick of buttonClicks; let i = index"
+  [ngStyle]="{backgroundColor: i > 4 ? 'blue' : 'transparent'}"
+  [ngClass]="{after5thClick: i > 4}">
+  {{btnClick}} 
+</div>
